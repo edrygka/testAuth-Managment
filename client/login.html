@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <script>
+            function login(){
+                setCookie("email", document.getElementById("email").value)
+                setCookie("username", document.getElementById("username").value)
+            }
+            console.log(document.cookie)
+        </script>
+        <div id="container">       
+            <form method="post" action="/login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br>
+                <input type="submit" value="Login" onclick="">
+            </form>
+        </div>
+        <a href="/register">Register</a><br>    
+    </body>
+</html>
+
